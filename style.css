@@ -1,0 +1,24 @@
+.mydiv {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.mydiv > div {
+  max-width: 100%;
+  display: block;
+}
+
+.mydiv > div {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+.container {
+  column-count: 4;
+  column-gap: 10px;
+}
